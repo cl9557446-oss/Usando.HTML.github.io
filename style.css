@@ -1,0 +1,92 @@
+/* 1. CONFIGURACIÓN GLOBAL Y BODY */
+body {
+    margin: 0; /* Simplifica margin-top, left y right */
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+}
+
+/* 2. CONFIGURACIÓN DEL MENÚ (NAV) */
+nav {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el menú siempre esté por encima del contenido */
+    transition: background-color 0.5s; 
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+    margin: 0;
+    margin-right: 3rem;
+}
+
+nav li {
+    display: inline;
+    margin-right: 30px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #fffdfd; 
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #ff9900; 
+}
+
+/* 3. ENCABEZADO (HEADER) */
+header {
+    background-image: url('img/Cuidad.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 35rem; 
+    color: #ffffff; 
+    display: flex; /* Centrado flexible */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 25px;
+    margin-top: 0;
+}
+
+/* 4. CONFIGURACIÓN DEL CONTENIDO PRINCIPAL */
+.contenido {
+    color: #000000;
+    font-size: 20px;
+    padding: 5% 10%; /* Ajuste de padding para mejores márgenes laterales */
+    text-align: justify;
+}
+
+/* Estilo para los títulos dentro del contenido */
+.contenido h2 {
+    text-align: left;
+}
+
+/* 5. PIE DE PÁGINA (FOOTER) */
+.footer {
+    background-color: rgb(5, 43, 150); 
+    padding: 3rem 1rem; /* Reducido de 10rem a 3rem para que sea proporcional */
+    color: #ffffff; 
+    text-align: center; 
+}
+
+/* Ajuste para que el texto no se pegue al menú fijo */
+main {
+    display: block;
+}

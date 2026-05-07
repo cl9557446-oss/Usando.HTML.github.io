@@ -1,70 +1,91 @@
+<!-- Indica al navegador que este es un documento HTML5 -->
 <!DOCTYPE html>
+<!-- Etiqueta raíz que envuelve todo el contenido; el atributo lang define el idioma español -->
 <html lang="es">
 <head>
+    <!-- Configura la codificación de caracteres para que se vean tildes y ñ -->
     <meta charset="UTF-8">
+    <!-- Asegura que la web se vea bien en celulares (diseño responsivo) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- El nombre que aparece en la pestaña del navegador -->
     <title>Explorando VS Code</title>
+    <!-- Vincula tu hoja de estilos externa (CSS) -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Sección superior: suele contener logos y el menú de navegación -->
     <header>
+        <!-- Define un bloque de enlaces de navegación -->
         <nav>
+            <!-- Lista desordenada (puntos) -->
             <ul>
+                <!-- Elementos de la lista que contienen enlaces (a) -->
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="about.html">Acerca de</a></li>
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
 
-        <!--Texto del encabezado-->
+        <!-- Título principal de nivel 1 (el más importante de la página) -->
         <h1>Entorno de Desarrollo</h1>
+        <!-- Párrafo de texto común -->
         <p>Potenciando la Programación con VS Code</p>
     </header>
 
-    <!--Cuerpo del HTML-->
+    <!-- Contenido principal y único de la página -->
     <main>
+        <!-- Define una sección temática dentro del contenido principal -->
         <section class="contenido">
+            <!-- Título de nivel 2 -->
             <h2> 
+                <!-- Etiqueta de línea usada para aplicar estilos específicos (fondo de color) -->
                 <span style="background-color: rgb(208, 209, 245);">¿Por qué usamos Visual Studio Code?</span>
             </h2>
             
+            <!-- Línea horizontal decorativa para separar contenido -->
             <hr>
 
+            <!-- Define una unidad de contenido independiente (como un post o noticia) -->
             <article>
                 <p>
-                    <strong>Visual Studio Code (VS Code)</strong> es un editor de código fuente ligero pero extremadamente potente desarrollado por Microsoft. Se ha convertido en la herramienta favorita de los desarrolladores web debido a su versatilidad y su enorme ecosistema de extensiones.
+                    <!-- Aplica negrita al texto para dar énfasis -->
+                    <strong>Visual Studio Code (VS Code)</strong> es un editor de código...
                 </p>
 
+                <!-- Títulos de nivel 3 para organizar subtemas -->
                 <h3>1. Características Principales</h3>
                 <p>
-                    A diferencia de un editor de texto simple, VS Code ofrece herramientas avanzadas como <strong>IntelliSense</strong>, que proporciona completado inteligente de código basado en tipos de variables y definiciones de funciones. Además, cuenta con una terminal integrada que nos permite ejecutar comandos de Git sin salir del programa.
+                    A diferencia de un editor de texto simple...
                 </p>
 
                 <h3>2. Personalización y Extensiones</h3>
                 <p>
-                    La verdadera fuerza de este editor reside en su capacidad de personalización. A través de su "Marketplace", podemos instalar temas visuales para reducir la fatiga ocular y extensiones técnicas (como <em>Live Server</em> o <em>Prettier</em>) que automatizan tareas repetitivas y mejoran nuestra productividad al escribir HTML y CSS.
+                    La verdadera fuerza de este editor... 
+                    <!-- Aplica cursiva (énfasis ligero) -->
+                    (como <em>Live Server</em> o <em>Prettier</em>)
                 </p>
 
                 <h3>3. Integración Nativa con Git</h3>
                 <p>
-                    VS Code facilita el control de versiones al integrar Git de forma visual. Esto nos permite ver qué líneas de código hemos modificado, realizar "commits" y gestionar ramas de trabajo de manera intuitiva, lo cual es fundamental para el desarrollo colaborativo en plataformas como GitHub.
+                    VS Code facilita el control de versiones...
                 </p>
 
                 <p>
-                    En conclusión, dominar Visual Studio Code no solo nos hace programadores más rápidos, sino que nos prepara para trabajar con los estándares actuales de la industria tecnológica.
+                    En conclusión, dominar Visual Studio Code...
                 </p>
 
             </article>
         </section>
     </main>
 
-    <!--Pie de pagina-->
+    <!-- Sección de cierre al final de la página -->
     <footer>
+        <!-- Divisor genérico para agrupar elementos (usado aquí para el copyright) -->
         <div class="footer">Derechos reservados © 2026 J.C.Lopez</div>
     </footer>
 
-    <!--Invoca al archivo script.js-->
+    <!-- Llama y ejecuta el archivo de JavaScript externo -->
     <script src="scrip.js"></script>
 
 </body>

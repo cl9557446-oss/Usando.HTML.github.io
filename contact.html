@@ -1,63 +1,85 @@
+<!-- Define que el documento es de tipo HTML5 -->
 <!DOCTYPE html>
+<!-- Raíz del documento con el atributo de idioma configurado en español -->
 <html lang="es">
 <head>
+    <!-- Define la codificación de caracteres universal (soporta tildes y ñ) -->
     <meta charset="UTF-8">
+    <!-- Ajusta la escala del sitio al tamaño de la pantalla del dispositivo (móvil, tablet, PC) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- El título que se muestra en la pestaña superior del navegador -->
     <title>Contacto - Desarrollo Web</title>
+    <!-- Conecta este archivo HTML con los estilos definidos en el archivo CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Contenedor del encabezado de la página -->
     <header>
-        <!-- Menú de navegación sincronizado -->
+        <!-- Define la barra de navegación del sitio -->
         <nav>
+            <!-- Lista desordenada para organizar los enlaces del menú -->
             <ul>
+                <!-- Elemento de lista con un enlace (a) a la página de Inicio -->
                 <li><a href="index.html">Inicio</a></li>
+                <!-- Elemento de lista con un enlace (a) a la página Acerca de -->
                 <li><a href="about.html">Acerca de</a></li>
+                <!-- Elemento de lista con un enlace (a) a la página de Contacto -->
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
 
-        <!--Texto del encabezado-->
+        <!-- Título principal de la sección de contacto -->
         <h1>Canales de Comunicación</h1>
+        <!-- Breve descripción o subtítulo debajo del encabezado -->
         <p>¿Tienes dudas sobre el proyecto? ¡Contáctanos!</p>
     </header>
 
-    <!--Cuerpo del HTML-->
+    <!-- Área de contenido principal del documento -->
     <main>
+        <!-- Sección que agrupa el contenido relacionado a la información de contacto -->
         <section class="contenido">
+            <!-- Título de segundo nivel -->
             <h2> 
+                <!-- Span: se usa para aplicar estilos (fondo color lavanda) a un trozo específico de texto -->
                 <span style="background-color: rgb(208, 209, 245);">Información de Contacto</span>
             </h2>
             
+            <!-- Etiqueta de separación temática (línea horizontal) -->
             <hr>
 
+            <!-- Artículo o bloque de contenido independiente -->
             <article>
                 <p>
-                    Si necesitas más información sobre las prácticas de desarrollo, el manejo de repositorios en GitHub o el uso de Visual Studio Code, puedes comunicarte a través de los siguientes medios:
+                    Si necesitas más información sobre las prácticas de desarrollo...
                 </p>
                 
-                <!-- Lista de contactos con negritas para mejor escaneo visual -->
+                <!-- Lista desordenada con estilo en línea para aumentar la separación entre líneas -->
                 <ul style="line-height: 2;">
+                    <!-- 'strong' se usa para resaltar términos importantes en negrita -->
                     <li><strong>Teléfono:</strong> +503 7858-2246</li>
                     <li><strong>Correo Personal:</strong> queli1801@gmail.com</li>
                     <li><strong>Soporte Institucional:</strong> infoclassinsibo@gmail.com</li>
+                    <!-- Enlace externo con estilos de color y subrayado específicos -->
                     <li><strong>Facebook:</strong> <a href="#" style="color: #052b96; text-decoration: underline;">Infoclass Insibo</a></li>
                 </ul>
 
+                <!-- Párrafo con margen superior para separarlo de la lista -->
                 <p style="margin-top: 30px;">
-                    <em>Nota: El tiempo de respuesta puede variar según la disponibilidad académica del equipo de soporte.</em>
+                    <!-- 'em' se usa para dar énfasis al texto, usualmente se ve en cursiva -->
+                    <em>Nota: El tiempo de respuesta puede variar según la disponibilidad académica...</em>
                 </p>
             </article>
         </section>
     </main>
 
-    <!--Pie de pagina actualizado -->
+    <!-- Sección final de la página para créditos y derechos -->
     <footer>
+        <!-- Div que actúa como contenedor para el texto del copyright -->
         <div class="footer">Derechos reservados © 2026 J.C.Lopez</div>
     </footer>
 
-    <!-- Archivo JS para el efecto del menú -->
+    <!-- Etiqueta para enlazar y cargar el archivo de lógica de JavaScript -->
     <script src="scrip.js"></script>
 </body>
 </html>

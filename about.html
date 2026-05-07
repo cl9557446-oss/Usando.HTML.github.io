@@ -1,73 +1,93 @@
+<!-- Declaración del tipo de documento: le dice al navegador que use HTML5 -->
 <!DOCTYPE html>
+<!-- Inicio del documento HTML; lang="es" indica que el contenido está en español -->
 <html lang="es">
 <head>
+    <!-- Define el juego de caracteres universal para evitar errores con tildes -->
     <meta charset="UTF-8">
+    <!-- Configuración para que el sitio sea "Responsive" (se adapte a móviles) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- El título que aparecerá en la pestaña del navegador -->
     <title>Acerca de - Estructura Semántica</title>
+    <!-- Enlace para importar los estilos desde tu archivo CSS externo -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Encabezado de la página: contiene el logo, título y menú -->
     <header>
+        <!-- Etiqueta semántica para agrupar los enlaces de navegación principal -->
         <nav>
+            <!-- Lista desordenada para estructurar los botones del menú -->
             <ul>
+                <!-- Enlaces de navegación entre tus tres archivos HTML -->
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="about.html">Acerca de</a></li>
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
 
-        <!--Texto del encabezado-->
+        <!-- Título principal de esta página específica -->
         <h1>Fundamentos de HTML</h1>
+        <!-- Eslogan o descripción corta del encabezado -->
         <p>Aprendiendo Estructura y Semántica</p>
     </header>
 
-    <!--Cuerpo del HTML-->
+    <!-- Define el contenido central y más importante de este archivo -->
     <main>
+        <!-- Agrupa el contenido que tiene una temática común -->
         <section class="contenido">
+            <!-- Título de sección -->
             <h2> 
+                <!-- Span: se usa para aplicar estilo a una parte del texto sin romper la línea -->
                 <span style="background-color: rgb(208, 209, 245);">La importancia del código limpio</span>
             </h2>
             
+            <!-- Regla horizontal: crea una línea divisoria visual -->
             <hr>
 
+            <!-- Define una composición autónoma que tiene sentido por sí sola -->
             <article>
                 <p>
-                    Este sitio web ha sido diseñado aplicando los conceptos de <strong>HTML5 Semántico</strong>. A diferencia del HTML antiguo, que utilizaba etiquetas genéricas para todo, el HTML moderno utiliza etiquetas que describen el significado del contenido que contienen.
+                    Este sitio web ha sido diseñado aplicando los conceptos de <strong>HTML5 Semántico</strong>...
                 </p>
 
+                <!-- Subtítulo de nivel 3 -->
                 <h3>¿Qué etiquetas estamos utilizando?</h3>
                 <p>
                     Para este proyecto, hemos implementado una jerarquía clara:
                 </p>
 
+                <!-- Lista de viñetas para enumerar las etiquetas explicadas -->
                 <ul>
-                    <li><strong>&lt;header&gt;:</strong> Contiene el título principal y la navegación global.</li>
-                    <li><strong>&lt;nav&gt;:</strong> Define el bloque de enlaces de navegación.</li>
-                    <li><strong>&lt;main&gt;:</strong> Envuelve el contenido principal y único de la página.</li>
-                    <li><strong>&lt;section&gt;:</strong> Organiza el contenido en temas específicos.</li>
-                    <li><strong>&lt;footer&gt;:</strong> Proporciona información de autoría y derechos.</li>
+                    <!-- &lt; y &gt; son entidades HTML para mostrar los símbolos < y > sin que el navegador los confunda con código real -->
+                    <li><strong>&lt;header&gt;:</strong> Contiene el título principal...</li>
+                    <li><strong>&lt;nav&gt;:</strong> Define el bloque de enlaces...</li>
+                    <li><strong>&lt;main&gt;:</strong> Envuelve el contenido principal...</li>
+                    <li><strong>&lt;section&gt;:</strong> Organiza el contenido...</li>
+                    <li><strong>&lt;footer&gt;:</strong> Proporciona información...</li>
                 </ul>
 
                 <h3>Beneficios del Desarrollo Semántico</h3>
                 <p>
-                    Escribir código de esta manera no solo facilita el mantenimiento para otros desarrolladores en <strong>GitHub</strong>, sino que también mejora la accesibilidad para lectores de pantalla y ayuda a los motores de búsqueda (SEO) a entender mejor de qué trata nuestro sitio.
+                    Escribir código de esta manera no solo facilita el mantenimiento...
                 </p>
 
                 <p>
-                    Esta práctica es el primer paso para dominar el desarrollo web profesional, sentando las bases antes de profundizar en estilos avanzados con CSS y lógica con JavaScript.
+                    Esta práctica es el primer paso para dominar el desarrollo web profesional...
                 </p>
 
             </article>
         </section>
     </main>
 
-    <!--Pie de pagina actualizado -->
+    <!-- Pie de página: información de contacto final, redes o copyright -->
     <footer>
+        <!-- Divisor usado para aplicar la clase "footer" definida en el CSS -->
         <div class="footer">Derechos reservados © 2026 J.C.Lopez</div>
     </footer>
 
-    <!-- Archivo JS para el efecto del menú -->
+    <!-- Carga el archivo JavaScript para añadir interactividad -->
     <script src="scrip.js"></script>
 </body>
 </html>

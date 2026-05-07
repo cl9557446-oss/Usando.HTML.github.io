@@ -45,8 +45,7 @@ nav a:hover {
 
 /* 3. ENCABEZADO (HEADER) */
 header {
-    /* Aquí cambiarás 'tecnologia.jpg' por la imagen que elijas */
-    background-image: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.7)), url('img/tecnologia.jpg'); 
+    background-image: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.7)), url('img/fondo.jpg'); 
     background-size: cover; 
     background-position: center; 
     height: 35rem; 

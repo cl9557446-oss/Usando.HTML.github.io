@@ -1,91 +1,87 @@
 <!-- Indica al navegador que este es un documento HTML5 -->
 <!DOCTYPE html>
-<!-- Etiqueta raíz que envuelve todo el contenido; el atributo lang define el idioma español -->
+<!-- Etiqueta raíz con el idioma configurado en español -->
 <html lang="es">
 <head>
-    <!-- Configura la codificación de caracteres para que se vean tildes y ñ -->
+    <!-- Codificación para caracteres especiales, tildes y ñ -->
     <meta charset="UTF-8">
-    <!-- Asegura que la web se vea bien en celulares (diseño responsivo) -->
+    <!-- Configuración para que la web sea adaptable a dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- El nombre que aparece en la pestaña del navegador -->
-    <title>Explorando VS Code</title>
-    <!-- Vincula tu hoja de estilos externa (CSS) -->
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Módulo 2.2 - Estructura de Software</title>
+    <!-- Vinculación con la hoja de estilos externa -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Sección superior: suele contener logos y el menú de navegación -->
+    <!-- Sección superior: menú de navegación y títulos principales -->
     <header>
-        <!-- Define un bloque de enlaces de navegación -->
+        <!-- Bloque de navegación global -->
         <nav>
-            <!-- Lista desordenada (puntos) -->
+            <!-- Lista de los enlaces del sitio -->
             <ul>
-                <!-- Elementos de la lista que contienen enlaces (a) -->
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="about.html">Acerca de</a></li>
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
 
-        <!-- Título principal de nivel 1 (el más importante de la página) -->
-        <h1>Entorno de Desarrollo</h1>
-        <!-- Párrafo de texto común -->
-        <p>Potenciando la Programación con VS Code</p>
+        <!-- Título principal de la página -->
+        <h1>Arquitectura y Diseño</h1>
+        <!-- Descripción corta del contenido -->
+        <p>Fundamentos para construir aplicaciones robustas</p>
     </header>
 
-    <!-- Contenido principal y único de la página -->
+    <!-- Contenido principal de la página -->
     <main>
-        <!-- Define una sección temática dentro del contenido principal -->
+        <!-- Sección temática del módulo -->
         <section class="contenido">
-            <!-- Título de nivel 2 -->
+            <!-- Título de nivel 2 con el nombre del módulo solicitado -->
             <h2> 
-                <!-- Etiqueta de línea usada para aplicar estilos específicos (fondo de color) -->
-                <span style="background-color: rgb(208, 209, 245);">¿Por qué usamos Visual Studio Code?</span>
+                <!-- Span para aplicar el color de fondo destacado -->
+                <span style="background-color: rgb(208, 209, 245);">Módulo 2.2: Estructura de Software</span>
             </h2>
             
-            <!-- Línea horizontal decorativa para separar contenido -->
+            <!-- Línea horizontal para separar el título del texto -->
             <hr>
 
-            <!-- Define una unidad de contenido independiente (como un post o noticia) -->
+            <!-- Bloque de contenido informativo -->
             <article>
                 <p>
-                    <!-- Aplica negrita al texto para dar énfasis -->
-                    <strong>Visual Studio Code (VS Code)</strong> es un editor de código...
+                    La <strong>Estructura de Software</strong> es el esqueleto de cualquier aplicación. Se refiere a la forma en que los componentes de un sistema interactúan entre sí para lograr un funcionamiento eficiente, escalable y fácil de mantener a largo plazo.
                 </p>
 
-                <!-- Títulos de nivel 3 para organizar subtemas -->
-                <h3>1. Características Principales</h3>
+                <!-- Subtemas organizados con títulos de nivel 3 -->
+                <h3>1. Componentes y Capas</h3>
                 <p>
-                    A diferencia de un editor de texto simple...
+                    En el desarrollo moderno, el software suele dividirse en capas, como el <em>Frontend</em> (lo que ve el usuario) y el <em>Backend</em> (la lógica y base de datos). Esta separación permite que el código sea más organizado y que varios programadores trabajen en distintas partes al mismo tiempo.
                 </p>
 
-                <h3>2. Personalización y Extensiones</h3>
+                <h3>2. Patrones de Diseño</h3>
                 <p>
-                    La verdadera fuerza de este editor... 
-                    <!-- Aplica cursiva (énfasis ligero) -->
-                    (como <em>Live Server</em> o <em>Prettier</em>)
+                    Para resolver problemas comunes, utilizamos patrones como el <strong>MVC (Modelo-Vista-Controlador)</strong>. Estos patrones dictan cómo debe fluir la información dentro de la estructura, evitando que el código se vuelva confuso o "espagueti".
                 </p>
 
-                <h3>3. Integración Nativa con Git</h3>
+                <h3>3. Escalabilidad y Mantenimiento</h3>
                 <p>
-                    VS Code facilita el control de versiones...
+                    Una buena estructura permite que el software crezca sin romperse. Si la base es sólida, añadir nuevas funciones es mucho más sencillo y el riesgo de generar errores en partes que ya funcionaban es mucho menor.
                 </p>
 
                 <p>
-                    En conclusión, dominar Visual Studio Code...
+                    En conclusión, entender la estructura es tan importante como escribir el código mismo, ya que define la calidad final del producto tecnológico.
                 </p>
 
             </article>
         </section>
     </main>
 
-    <!-- Sección de cierre al final de la página -->
+    <!-- Pie de página con créditos -->
     <footer>
-        <!-- Divisor genérico para agrupar elementos (usado aquí para el copyright) -->
+        <!-- Contenedor para el texto del copyright -->
         <div class="footer">Derechos reservados © 2026 J.C.Lopez</div>
     </footer>
 
-    <!-- Llama y ejecuta el archivo de JavaScript externo -->
+    <!-- Enlace al archivo de JavaScript para funciones dinámicas -->
     <script src="scrip.js"></script>
 
 </body>

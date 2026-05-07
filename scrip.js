@@ -33,4 +33,4 @@ if (menu && header) {
 /**
  * NOTA: Asegúrate de que el archivo se llame scrip.js 
  * tal como lo pusiste en el HTML, o cámbialo en ambos lados.
- */
+ */ 

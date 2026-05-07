@@ -1,35 +1,36 @@
 /**
  * Control del comportamiento del Menú de Navegación
- * Cambia el fondo del menú al hacer scroll después de pasar el encabezado
+ * Ajustado a la nueva paleta: Azul oscuro (#0a192f)
  */
 
-// Selecciona los elementos del DOM de manera semántica
+// Seleccionamos el menú y el encabezado
 const menu = document.querySelector("nav");
 const header = document.querySelector("header");
 
-// Verificamos que ambos elementos existan antes de añadir el evento
+// Verificamos que existan en la página actual
 if (menu && header) {
     
-    // Función para manejar el cambio de color
     const handleScroll = () => {
-        // Obtiene la altura actual del encabezado en cada ejecución
-        // Esto es útil si el usuario cambia el tamaño de la ventana
+        // Obtenemos la altura del encabezado para saber cuándo cambiar el fondo
         const headerHeight = header.offsetHeight;
 
-        if (window.scrollY > headerHeight) {
-            // Fondo sólido cuando bajamos
-            menu.style.backgroundColor = "rgb(5, 43, 150)"; 
+        // Si el usuario baja más allá del encabezado
+        if (window.scrollY > headerHeight - 50) { // El -50 da un margen para que cambie un poco antes
+            // Cambia al azul marino profundo que definimos en el footer y el CSS
+            menu.style.backgroundColor = "#0a192f"; 
+            menu.style.boxShadow = "0 2px 10px rgba(0,0,0,0.3)"; // Añade una pequeña sombra al bajar
         } else {
-            // Fondo transparente cuando estamos arriba
-            menu.style.backgroundColor = "rgba(0, 0, 0, 0)"; 
+            // Fondo totalmente transparente cuando está sobre el header
+            menu.style.backgroundColor = "transparent"; 
+            menu.style.boxShadow = "none";
         }
     };
 
-    // Escucha el evento de desplazamiento del ratón
+    // Escuchamos el evento de scroll
     window.addEventListener("scroll", handleScroll);
 }
 
 /**
- * Nota: El color rgb(5, 43, 150) coincide con el color 
- * que definimos para el footer en el archivo style.css
+ * NOTA: Asegúrate de que el archivo se llame scrip.js 
+ * tal como lo pusiste en el HTML, o cámbialo en ambos lados.
  */

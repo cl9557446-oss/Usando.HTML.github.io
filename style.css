@@ -1,19 +1,21 @@
 /* 1. CONFIGURACIÓN GLOBAL Y BODY */
 body {
-    margin: 0; /* Simplifica margin-top, left y right */
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6; /* Mejora la legibilidad del texto */
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Gris muy claro para el fondo general */
+    color: #333333; /* Gris oscuro para el texto principal */
 }
 
 /* 2. CONFIGURACIÓN DEL MENÚ (NAV) */
 nav {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(10, 25, 47, 0); /* Azul marino profundo transparente */
     padding: 20px;
     position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Asegura que el menú siempre esté por encima del contenido */
+    z-index: 1000;
     transition: background-color 0.5s; 
 }
 
@@ -31,23 +33,25 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fffdfd; 
+    color: #e0e0e0; /* Gris claro para los enlaces */
     font-weight: bold;
     font-size: 18px;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #ff9900; 
+    color: #00d4ff; /* Azul brillante al pasar el mouse para contraste */
 }
 
 /* 3. ENCABEZADO (HEADER) */
 header {
-    background-image: url('img/Cuidad.jpg'); 
+    /* Aquí cambiarás 'tecnologia.jpg' por la imagen que elijas */
+    background-image: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.7)), url('img/tecnologia.jpg'); 
     background-size: cover; 
     background-position: center; 
     height: 35rem; 
     color: #ffffff; 
-    display: flex; /* Centrado flexible */
+    display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -56,37 +60,46 @@ header {
 }
 
 header h1 {
-    font-size: 45px;
+    font-size: 50px;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Sombra para resaltar en el fondo */
 }
 
 header p {
-    font-size: 25px;
-    margin-top: 0;
+    font-size: 22px;
+    color: #cbd5e0; /* Gris azulado claro */
 }
 
 /* 4. CONFIGURACIÓN DEL CONTENIDO PRINCIPAL */
 .contenido {
-    color: #000000;
-    font-size: 20px;
-    padding: 5% 10%; /* Ajuste de padding para mejores márgenes laterales */
+    background-color: #ffffff; /* Blanco puro para el área de lectura */
+    color: #2d3748; /* Gris carbón */
+    font-size: 19px;
+    padding: 60px 15%; 
+    max-width: 1000px;
+    margin: 40px auto; /* Centra el bloque de contenido con sombra */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
     text-align: justify;
 }
 
-/* Estilo para los títulos dentro del contenido */
 .contenido h2 {
-    text-align: left;
+    color: #1a365d; /* Azul oscuro para subtítulos */
+    border-left: 5px solid #1a365d;
+    padding-left: 15px;
 }
 
 /* 5. PIE DE PÁGINA (FOOTER) */
 .footer {
-    background-color: rgb(5, 43, 150); 
-    padding: 3rem 1rem; /* Reducido de 10rem a 3rem para que sea proporcional */
-    color: #ffffff; 
+    background-color: #0a192f; /* Azul marino casi negro */
+    padding: 4rem 1rem; 
+    color: #a0aec0; /* Gris medio */
     text-align: center; 
+    font-size: 14px;
+    border-top: 3px solid #1a365d;
 }
 
-/* Ajuste para que el texto no se pegue al menú fijo */
+/* Ajuste para el main */
 main {
-    display: block;
+    padding-bottom: 20px;
 }

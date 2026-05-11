@@ -1,104 +1,139 @@
-/* 1. CONFIGURACIÓN GLOBAL Y BODY */
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4; /* Gris muy claro para el fondo general */
-    color: #333333; /* Gris oscuro para el texto principal */
+
+
+/* 1. VARIABLES DE ARQUITECTURA (Capa de Configuración) */
+:root {
+    --primary-navy: #0a192f;      /* Azul marino profundo */
+    --accent-cyan: #00d4ff;       /* Azul brillante para interacción */
+    --text-white: #e0e0e0;        /* Texto claro sobre fondos oscuros */
+    --text-dark: #2d3748;         /* Texto oscuro para lectura */
+    --bg-light: #f4f7f9;          /* Fondo general más moderno */
+    --border-accent: #1a365d;     /* Azul para bordes y jerarquía */
+    --white: #ffffff;
 }
 
-/* 2. CONFIGURACIÓN DEL MENÚ (NAV) */
+/* 2. CONFIGURACIÓN GLOBAL */
+body {
+    margin: 0;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif; /* Tipografía más moderna */
+    line-height: 1.7; /* Mejor interlineado para lectura técnica */
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+/* 3. NAVEGACIÓN (Sistema de Acceso Global) */
 nav {
-    background-color: rgba(10, 25, 47, 0); /* Azul marino profundo transparente */
-    padding: 20px;
+    background-color: rgba(10, 25, 47, 0.95); /* Menos transparente al inicio para mejor legibilidad */
+    backdrop-filter: blur(8px); /* Efecto de desenfoque moderno */
+    padding: 15px 0;
     position: fixed; 
     top: 0;
-    left: 0;
     width: 100%;
     z-index: 1000;
-    transition: background-color 0.5s; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease; 
 }
 
 nav ul {
     list-style-type: none;
     text-align: right;
     margin: 0;
-    margin-right: 3rem;
+    padding-right: 5%;
 }
 
 nav li {
-    display: inline;
-    margin-right: 30px; 
+    display: inline-block; /* Mejor para alineación */
+    margin-left: 2rem; 
 }
 
 nav a {
     text-decoration: none;
-    color: #e0e0e0; /* Gris claro para los enlaces */
-    font-weight: bold;
-    font-size: 18px;
+    color: var(--text-white);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.5px;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #00d4ff; /* Azul brillante al pasar el mouse para contraste */
+    color: var(--accent-cyan);
+    text-shadow: 0 0 8px rgba(0, 212, 255, 0.4);
 }
 
-/* 3. ENCABEZADO (HEADER) */
+/* 4. ENCABEZADO (Capa de Presentación) */
 header {
-    background-image: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.7)), url('img/fondo.jpg'); 
+    background-image: 
+        linear-gradient(rgba(10, 25, 47, 0.85), rgba(10, 25, 47, 0.85)), 
+        url('img/fondo.jpg'); 
+    background-attachment: fixed; /* Efecto Parallax suave */
     background-size: cover; 
     background-position: center; 
-    height: 35rem; 
-    color: #ffffff; 
+    height: 80vh; /* Altura basada en la pantalla */
+    color: var(--white); 
     display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center; 
     padding: 20px;
 }
 
 header h1 {
-    font-size: 50px;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Sombra para resaltar en el fondo */
+    font-size: clamp(2.5rem, 6vw, 4rem); /* Tamaño fluido según pantalla */
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: -1px;
 }
 
 header p {
-    font-size: 22px;
-    color: #cbd5e0; /* Gris azulado claro */
+    font-size: 1.2rem;
+    max-width: 700px;
+    color: #a0aec0;
 }
 
-/* 4. CONFIGURACIÓN DEL CONTENIDO PRINCIPAL */
+/* 5. ÁREA DE CONTENIDO (Núcleo de Información) */
 .contenido {
-    background-color: #ffffff; /* Blanco puro para el área de lectura */
-    color: #2d3748; /* Gris carbón */
-    font-size: 19px;
-    padding: 60px 15%; 
-    max-width: 1000px;
-    margin: 40px auto; /* Centra el bloque de contenido con sombra */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    text-align: justify;
+    background-color: var(--white);
+    color: var(--text-dark);
+    padding: 4rem 10%; 
+    max-width: 1100px;
+    margin: -60px auto 40px; /* Sube un poco para "pisar" el header */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    position: relative; /* Para asegurar que esté sobre el header */
 }
 
 .contenido h2 {
-    color: #1a365d; /* Azul oscuro para subtítulos */
-    border-left: 5px solid #1a365d;
-    padding-left: 15px;
+    color: var(--border-accent);
+    border-left: 6px solid var(--accent-cyan); /* Color brillante para destacar */
+    padding-left: 20px;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* 5. PIE DE PÁGINA (FOOTER) */
-.footer {
-    background-color: #0a192f; /* Azul marino casi negro */
-    padding: 4rem 1rem; 
-    color: #a0aec0; /* Gris medio */
+/* 6. PIE DE PÁGINA (Capa Final) */
+footer {
+    background-color: var(--primary-navy);
+    padding: 3rem 1rem; 
+    color: #718096;
     text-align: center; 
-    font-size: 14px;
-    border-top: 3px solid #1a365d;
+    border-top: 4px solid var(--border-accent);
 }
 
-/* Ajuste para el main */
-main {
-    padding-bottom: 20px;
-} 
+.footer {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* 7. UTILIDADES */
+strong {
+    color: var(--border-accent);
+    font-weight: 600;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 2rem 0;
+}

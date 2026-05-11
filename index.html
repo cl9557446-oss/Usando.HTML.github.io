@@ -1,88 +1,97 @@
-<!-- Indica al navegador que este es un documento HTML5 -->
+<!-- Define que el documento usa el estándar moderno de HTML5 -->
 <!DOCTYPE html>
-<!-- Etiqueta raíz con el idioma configurado en español -->
+
+<!-- Contenedor principal de toda la página; el atributo lang ayuda a los buscadores y lectores de pantalla -->
 <html lang="es">
+
 <head>
-    <!-- Codificación para caracteres especiales, tildes y ñ -->
+    <!-- Define el soporte para todos los caracteres, como tildes y la letra ñ -->
     <meta charset="UTF-8">
-    <!-- Configuración para que la web sea adaptable a dispositivos móviles -->
+    
+    <!-- Asegura que la arquitectura visual de la web se ajuste al tamaño de celulares y tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Título que aparece en la pestaña del navegador actualizado -->
-    <title>Módulo 2.2 - Diseño de Software</title>
-    <!-- Vinculación con la hoja de estilos externa -->
+    
+    <!-- El nombre que aparecerá en la pestaña superior del navegador -->
+    <title>Arquitectura de Software: Estructuras y Patrones</title>
+    
+    <!-- Conecta el HTML con las reglas de diseño (colores, fuentes) definidas en otro archivo -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Sección superior: menú de navegación y títulos principales -->
+    <!-- El bloque superior que suele contener el logo y la navegación global -->
     <header>
-        <!-- Bloque de navegación global -->
+        <!-- Define un conjunto de enlaces de navegación para el usuario -->
         <nav>
-            <!-- Lista de los enlaces del sitio -->
+            <!-- Crea una lista sin numerar para organizar los enlaces -->
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Acerca de</a></li>
-                <li><a href="contact.html">Contacto</a></li>
+                <!-- Cada elemento de la lista (li) contiene un hipervínculo (a) a otra sección -->
+                <li><a href="#patrones">Patrones</a></li>
+                <li><a href="#principios">Principios</a></li>
+                <li><a href="#capas">Capas</a></li>
             </ul>
         </nav>
 
-        <!-- Título principal de la página -->
-        <h1>Planificación y Metodologías</h1>
-        <!-- Descripción corta del contenido -->
-        <p>Construyendo el plano lógico de las aplicaciones modernas</p>
+        <!-- El encabezado de mayor importancia, el tema central del documento -->
+        <h1>Arquitectura de Software</h1>
+        <!-- Un párrafo breve que sirve como subtítulo o introducción -->
+        <p>Definiendo la estructura, componentes y conexiones de un sistema complejo.</p>
     </header>
 
-    <!-- Contenido principal de la página -->
+    <!-- El área central donde reside la información más relevante de la página -->
     <main>
-        <!-- Sección temática del módulo -->
+        <!-- Agrupa contenido relacionado con un tema específico, en este caso, la arquitectura -->
         <section class="contenido">
-            <!-- Título de nivel 2 actualizado según tu solicitud -->
+            <!-- Encabezado de segundo nivel para dividir los temas del módulo -->
             <h2> 
-                <!-- Span para aplicar el color de fondo destacado -->
-                <span style="background-color: rgb(208, 209, 245);">Módulo 2.2: Diseño de Software</span>
+                <!-- Pequeño contenedor para aplicar estilos específicos a una parte del texto -->
+                <span style="background-color: rgb(210, 245, 210);">Conceptos Fundamentales</span>
             </h2>
             
-            <!-- Línea horizontal para separar el título del texto -->
+            <!-- Una línea decorativa que separa visualmente las secciones -->
             <hr>
 
-            <!-- Bloque de contenido informativo -->
+            <!-- Representa una unidad de contenido que podría entenderse por sí sola -->
             <article>
                 <p>
-                    El <strong>Diseño de Software</strong> es el proceso de transformar los requisitos del usuario en una forma que el programador pueda implementar. No se trata de escribir código inmediatamente, sino de crear el "plano" detallado que guiará todo el desarrollo.
+                    La <strong>Arquitectura de Software</strong> es la decisión de diseño de más alto nivel. Mientras que el diseño de software se enfoca en "cómo construir", la arquitectura define los <strong>cimientos</strong>: qué componentes existen y cómo se comunican entre sí.
                 </p>
 
-                <!-- Subtemas sobre diseño de software -->
-                <h3>1. Abstracción y Modularidad</h3>
+                <!-- Encabezados de tercer nivel para subtemas jerarquizados -->
+                <h3>1. Patrones de Arquitectura</h3>
                 <p>
-                    Un buen diseño permite dividir un sistema complejo en piezas más pequeñas o <em>módulos</em>. Esto facilita que cada parte se diseñe de forma independiente, lo que reduce la carga cognitiva del equipo y permite que el sistema sea más fácil de entender.
+                    Existen soluciones probadas para problemas comunes, como la arquitectura de <em>Microservicios</em> o la <em>Arquitectura Limpia (Clean Architecture)</em>. Estos patrones dictan cómo se organiza la lógica para que sea escalable.
                 </p>
 
-                <h3>2. Interfaz y Experiencia (UI/UX)</h3>
+                
+
+                <h3>2. Desacoplamiento y Cohesión</h3>
                 <p>
-                    El diseño de software también contempla cómo interactuará el usuario con el sistema. Definir flujos de navegación claros y botones intuitivos es parte esencial del diseño técnico, asegurando que la herramienta sea útil y eficiente.
+                    Una buena arquitectura busca que los componentes dependan lo menos posible unos de otros (bajo acoplamiento) y que cada parte tenga una responsabilidad única y clara (alta cohesión).
                 </p>
 
-                <h3>3. Documentación Técnica</h3>
+                <h3>3. Atributos de Calidad</h3>
                 <p>
-                    Antes de programar, se utilizan diagramas (como UML) para representar la lógica. Esto asegura que todo el equipo esté en la misma sintonía en <strong>GitHub</strong> y que no haya confusiones sobre cómo deben conectarse las diferentes funciones del programa.
+                    Más allá de las funciones, la arquitectura debe garantizar que el sistema sea seguro, rápido, fácil de mantener y capaz de crecer sin colapsar. Estos son los llamados "requisitos no funcionales".
                 </p>
 
                 <p>
-                    En conclusión, un diseño sólido ahorra tiempo y dinero, evitando errores costosos que suelen aparecer cuando se empieza a programar sin una planificación previa.
+                    En resumen, una arquitectura sólida es la diferencia entre un sistema que evoluciona con el tiempo y uno que se vuelve imposible de actualizar debido a su desorden técnico.
                 </p>
 
             </article>
         </section>
     </main>
 
-    <!-- Pie de página con créditos -->
+    <!-- La sección final del documento para información legal, créditos o redes sociales -->
     <footer>
-        <!-- Contenedor para el texto del copyright -->
-        <div class="footer">Derechos reservados © 2026 J.C.Lopez</div>
+        <!-- Un contenedor genérico (div) para dar formato al texto del pie de página -->
+        <div class="footer">Especialización en Desarrollo de Software © 2026</div>
     </footer>
 
-    <!-- Enlace al archivo de JavaScript para funciones dinámicas -->
-    <script src="scrip.js"></script>
+    <!-- Carga la lógica de programación (comportamiento interactivo) al final para no retrasar la visualización del texto -->
+    <script src="script.js"></script>
 
 </body>
 </html>

@@ -1,84 +1,89 @@
-<!-- Define que el documento es de tipo HTML5 -->
+<!-- Indica al navegador que el documento sigue el estándar moderno HTML5 -->
 <!DOCTYPE html>
-<!-- Raíz del documento con el atributo de idioma configurado en español -->
+
+<!-- Define el inicio del documento y el idioma principal del contenido -->
 <html lang="es">
+
 <head>
-    <!-- Define la codificación de caracteres universal (soporta tildes y ñ) -->
+    <!-- Establece la codificación universal para mostrar correctamente caracteres como la 'ñ' -->
     <meta charset="UTF-8">
-    <!-- Ajusta la escala del sitio al tamaño de la pantalla del dispositivo (móvil, tablet, PC) -->
+    
+    <!-- Configura la visualización para que el diseño no se rompa en pantallas pequeñas -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- El título que se muestra en la pestaña superior del navegador -->
-    <title>Contacto - Diseño de Software</title>
-    <!-- Conecta este archivo HTML con los estilos definidos en el archivo CSS -->
+    
+    <!-- Texto que identifica la página en la pestaña del navegador -->
+    <title>Contacto - Consultoría en Arquitectura</title>
+    
+    <!-- Importa los estilos globales para que la página de contacto luzca igual a las demás -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Contenedor del encabezado de la página -->
+    <!-- Bloque superior que contiene los elementos de identidad y navegación -->
     <header>
-        <!-- Define la barra de navegación del sitio -->
+        <!-- Define el menú principal de navegación -->
         <nav>
-            <!-- Lista desordenada para organizar los enlaces del menú -->
+            <!-- Organiza los botones de acceso en una lista lógica -->
             <ul>
-                <!-- Enlaces de navegación sincronizados con el proyecto -->
+                <!-- Enlaces que conectan las tres partes principales de tu sitio -->
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="about.html">Acerca de</a></li>
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
 
-        <!-- Título principal de la sección de contacto -->
-        <h1>Canales de Comunicación</h1>
-        <!-- Breve descripción debajo del encabezado -->
-        <p>¿Tienes dudas sobre el diseño o la planificación? ¡Contáctanos!</p>
+        <!-- Título de mayor jerarquía visual y estructural en esta página -->
+        <h1>Canales de Consulta Técnica</h1>
+        <!-- Breve instrucción o mensaje de bienvenida al usuario -->
+        <p>¿Necesitas asesoría sobre patrones de diseño o estructuras de sistemas?</p>
     </header>
 
-    <!-- Área de contenido principal del documento -->
+    <!-- Define el área donde se encuentra el contenido específico y principal -->
     <main>
-        <!-- Sección que agrupa la información de contacto -->
+        <!-- Agrupa la información bajo una temática común: el contacto -->
         <section class="contenido">
-            <!-- Título de segundo nivel -->
+            <!-- Título de segundo nivel para organizar el cuerpo del mensaje -->
             <h2> 
-                <!-- Span: usado para aplicar fondo color lavanda al texto -->
-                <span style="background-color: rgb(208, 209, 245);">Información de Contacto</span>
+                <!-- Etiqueta span usada para aplicar un resaltado visual (fondo verde claro) -->
+                <span style="background-color: rgb(210, 245, 210);">Información de Contacto</span>
             </h2>
             
-            <!-- Etiqueta de separación temática (línea horizontal) -->
+            <!-- Crea una separación física y visual entre el título y la lista -->
             <hr>
 
-            <!-- Artículo informativo independiente -->
+            <!-- Bloque independiente de información técnica -->
             <article>
                 <p>
-                    Si necesitas más información sobre el <strong>Diseño de Software</strong>, la creación de prototipos o metodologías de trabajo, puedes comunicarte a través de los siguientes medios:
+                    Para consultas profundas sobre <strong>Arquitectura de Software</strong>, revisiones de diagramas UML o implementación de servicios, utiliza los siguientes canales:
                 </p>
                 
-                <!-- Lista de contactos con estilos en línea para mayor legibilidad -->
+                <!-- Lista de contactos con un espaciado entre líneas ajustado para mejorar la lectura -->
                 <ul style="line-height: 2;">
-                    <!-- Teléfono con formato de El Salvador -->
-                    <li><strong>Teléfono:</strong> +503 2250-5500</li>
-                    <!-- Correo institucional solicitado -->
-                    <li><strong>Correo:</strong> 5786035@clases.edu.sv</li>
-                    <!-- Enlace a Facebook con color personalizado -->
-                    <li><strong>Facebook:</strong> <a href="#" style="color: #052b96; text-decoration: underline;">Infoclass Insibo</a></li>
-                    <!-- Enlace a Instagram con color representativo -->
-                    <li><strong>Instagram:</strong> <a href="#" style="color: #e1306c; text-decoration: underline;">@Infoclass_Insibo</a></li>
+                    <!-- Los elementos 'li' listan cada medio de comunicación disponible -->
+                    <li><strong>Teléfono de Soporte:</strong> +503 2250-5500</li>
+                    <!-- Correo electrónico para documentación y archivos técnicos -->
+                    <li><strong>Correo Institucional:</strong> 5786035@clases.edu.sv</li>
+                    <!-- Enlaces externos (a) con colores específicos para redes sociales -->
+                    <li><strong>Comunidad:</strong> <a href="#" style="color: #052b96; text-decoration: underline;">Infoclass Insibo (FB)</a></li>
+                    <li><strong>Proyectos:</strong> <a href="#" style="color: #e1306c; text-decoration: underline;">@Infoclass_Insibo (IG)</a></li>
                 </ul>
 
-                <!-- Nota aclaratoria con margen superior y cursiva -->
+                <!-- Párrafo aclaratorio con estilo en cursiva (em) y margen superior -->
                 <p style="margin-top: 30px;">
-                    <em>Nota: El tiempo de respuesta puede variar según la disponibilidad académica del equipo.</em>
+                    <em>Nota: La arquitectura requiere análisis. Las respuestas técnicas se envían en un máximo de 48 horas hábiles.</em>
                 </p>
             </article>
         </section>
     </main>
 
-    <!-- Sección de pie de página para copyright y autoría -->
+    <!-- El pie de página que cierra la estructura del sitio -->
     <footer>
-        <!-- Divisor para aplicar los estilos de la clase .footer del CSS -->
-        <div class="footer">Derechos reservados © 2026 J.C.Lopez</div>
+        <!-- Un contenedor simple para el texto de derechos de autor y créditos -->
+        <div class="footer">Especialización en Desarrollo de Software © 2026</div>
     </footer>
 
-    <!-- Etiqueta para enlazar y cargar el archivo de lógica de JavaScript -->
-    <script src="scrip.js"></script>
+    <!-- Carga el archivo JavaScript para manejar posibles validaciones de formularios o efectos -->
+    <script src="script.js"></script>
 </body>
 </html>

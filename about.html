@@ -1,17 +1,23 @@
-<!-- Declaración del tipo de documento: le dice al navegador que use HTML5 -->
+<!-- Indica al navegador que estamos utilizando el estándar HTML5 -->
 <!DOCTYPE html>
-<!-- Inicio del documento HTML; lang="es" indica que el contenido está en español -->
+
+<!-- Apertura del documento con el idioma configurado para que los buscadores lo identifiquen -->
 <html lang="es">
+
 <head>
-    <!-- Define el juego de caracteres universal para evitar errores con tildes -->
+    <!-- Configura el soporte de caracteres para leer correctamente tildes y ñ -->
     <meta charset="UTF-8">
-    <!-- Configuración para que el sitio sea "Responsive" (se adapte a móviles) -->
+    
+    <!-- Permite que la arquitectura del sitio sea responsiva y se vea bien en móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- El título actualizado para reflejar el tema de Diseño -->
-    <title>Acerca de - Diseño de Software</title>
-    <!-- Enlace para importar los estilos desde tu archivo CSS externo -->
+    
+    <!-- Título de la pestaña que ayuda al SEO y a la navegación del usuario -->
+    <title>Acerca de - Nuestra Filosofía Arquitectónica</title>
+    
+    <!-- Vincula este archivo con la hoja de estilos compartida para mantener coherencia visual -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Encabezado de la página: contiene el logo, título y menú -->
@@ -20,74 +26,72 @@
         <nav>
             <!-- Lista desordenada para estructurar los botones del menú -->
             <ul>
-                <!-- Enlaces de navegación sincronizados -->
+                <!-- Enlaces de navegación vinculados al Home y Contacto -->
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="about.html">Acerca de</a></li>
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
 
-        <!-- Título principal de esta página específica -->
-        <h1>Ingeniería y Planificación</h1>
-        <!-- Descripción del enfoque de esta sección -->
-        <p>El arte de diseñar soluciones digitales eficientes</p>
+        <!-- Título principal: define de qué trata esta página específica -->
+        <h1>Principios de Arquitectura</h1>
+        <!-- Descripción corta que refuerza la propuesta de valor -->
+        <p>Expertos en la creación de estructuras robustas y escalables</p>
     </header>
 
-    <!-- Define el contenido central y más importante de este archivo -->
+    <!-- Define el área de contenido principal y único de esta página -->
     <main>
-        <!-- Agrupa el contenido que tiene una temática común -->
+        <!-- Agrupa el contenido que tiene una temática común (en este caso, principios técnicos) -->
         <section class="contenido">
-            <!-- Título de sección resaltado -->
+            <!-- Título de sección destacado con un color de fondo suave -->
             <h2> 
-                <!-- Span: usado para el fondo color lavanda -->
-                <span style="background-color: rgb(208, 209, 245);">Diseño técnico y limpieza de código</span>
+                <!-- Span: se usa para aplicar un estilo específico (color) a una parte del texto -->
+                <span style="background-color: rgb(210, 245, 210);">Nuestra Metodología de Trabajo</span>
             </h2>
             
-            <!-- Regla horizontal divisoria -->
+            <!-- Línea horizontal para separar visualmente el encabezado del cuerpo de texto -->
             <hr>
 
-            <!-- Artículo independiente sobre los beneficios del diseño -->
+            <!-- Artículo que explica un concepto de forma independiente -->
             <article>
                 <p>
-                    Un buen <strong>Diseño de Software</strong> comienza desde la elección de las etiquetas en el código fuente. Utilizar HTML5 Semántico permite que la estructura de la aplicación sea comprensible tanto para humanos como para máquinas, facilitando la escalabilidad del sistema.
+                    Para nosotros, la <strong>Arquitectura de Software</strong> no es solo dibujar diagramas, sino aplicar principios de ingeniería que permitan que un sistema crezca sin volverse caótico. Utilizamos patrones modernos para asegurar que cada línea de código tenga un propósito claro.
                 </p>
 
-                <!-- Subtítulo de jerarquía 3 -->
-                <h3>Elementos de Diseño Semántico</h3>
+                <!-- Subtítulo de nivel 3 para organizar la información en puntos clave -->
+                <h3>Pilares de Nuestra Arquitectura</h3>
                 <p>
-                    En el flujo de este proyecto, cada etiqueta cumple un rol dentro del diseño global:
+                    Implementamos soluciones basadas en tres fundamentos técnicos:
                 </p>
 
-                <!-- Lista de viñetas explicando la función semántica -->
+                <!-- Lista de viñetas para desglosar conceptos complejos de forma clara -->
                 <ul>
-                    <!-- Uso de entidades HTML (&lt; &gt;) para mostrar etiquetas como texto -->
-                    <li><strong>&lt;header&gt;:</strong> Define la zona de identidad y navegación del diseño.</li>
-                    <li><strong>&lt;nav&gt;:</strong> Organiza los puntos de acceso a los diferentes módulos.</li>
-                    <li><strong>&lt;main&gt;:</strong> Delimita el área de contenido único y principal.</li>
-                    <li><strong>&lt;section&gt;:</strong> Crea divisiones lógicas dentro de una misma página.</li>
-                    <li><strong>&lt;footer&gt;:</strong> Establece el cierre informativo y de créditos.</li>
+                    <!-- Uso de negritas (strong) para resaltar términos técnicos -->
+                    <li><strong>Separación de Capas:</strong> Dividimos la lógica de negocio, la base de datos y la interfaz de usuario para facilitar cambios futuros.</li>
+                    <li><strong>Mantenibilidad:</strong> Diseñamos pensando en el "yo del futuro", creando código que otros desarrolladores puedan leer y mejorar.</li>
+                    <li><strong>Escalabilidad:</strong> Preparamos el sistema para soportar un incremento de usuarios sin perder rendimiento.</li>
                 </ul>
 
-                <h3>¿Por qué diseñar antes de codificar?</h3>
+                <h3>El Valor de la Abstracción</h3>
                 <p>
-                    El diseño previo asegura que el mantenimiento en <strong>GitHub</strong> sea sencillo y que la interfaz de usuario sea intuitiva. Al separar la estructura (HTML) del estilo (CSS) y la lógica (JS), estamos aplicando uno de los principios más importantes del diseño de software: la <em>separación de responsabilidades</em>.
+                    Al abstraer la complejidad, permitimos que el equipo de desarrollo trabaje en módulos independientes. Esto reduce el riesgo de errores en cascada y optimiza los tiempos de entrega en repositorios compartidos.
                 </p>
 
                 <p>
-                    Dominar estos conceptos es lo que diferencia a un programador de un ingeniero de software capaz de crear sistemas profesionales.
+                    Entender la arquitectura es entender el negocio: una estructura sólida hoy es la base del éxito del mañana.
                 </p>
 
             </article>
         </section>
     </main>
 
-    <!-- Pie de página con información de autoría -->
+    <!-- Sección final de la página para créditos y derechos de autor -->
     <footer>
-        <!-- Divisor para aplicar los estilos del archivo CSS -->
-        <div class="footer">Derechos reservados © 2026 J.C.Lopez</div>
+        <!-- El div ayuda a aplicar estilos de alineación y espaciado definidos en el CSS -->
+        <div class="footer">Especialización en Desarrollo de Software © 2026</div>
     </footer>
 
-    <!-- Carga del archivo JavaScript para la interactividad del sitio -->
-    <script src="scrip.js"></script>
+    <!-- Carga del JavaScript para añadir funciones dinámicas o interactividad -->
+    <script src="script.js"></script>
 </body>
 </html>

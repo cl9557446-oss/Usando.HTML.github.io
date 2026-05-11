@@ -1,9 +1,3 @@
-/**
- * ARCHIVO: script.js
- * FUNCIÓN: Gestionar la interactividad y suavidad de la interfaz
- * TEMA: Arquitectura de Software
- */
-
 // Esperamos a que el DOM (la estructura HTML) esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
     
